@@ -1,0 +1,2 @@
+rootProject.name = "Fract-All"
+
