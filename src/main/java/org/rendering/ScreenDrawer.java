@@ -204,7 +204,7 @@ public class ScreenDrawer extends JPanel {
         double aspectRatio = 1.0;
         int height = (int) (width / aspectRatio);
 
-        JFrame frame = new JFrame("Mandelbrot Set with Zoom and Quality Reduction");
+        JFrame frame = new JFrame("Fract-All");
         ScreenDrawer drawer = new ScreenDrawer(width, height, 1000);
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
