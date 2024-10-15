@@ -18,6 +18,7 @@ public class ScreenDrawer extends JPanel {
     private BufferedImage bufferedImage;
     private BufferedImage lowResImage;
     private Timer zoomTimer;
+    private interations = 500;
 
     // Define the boundaries of the complex plane
     private double minReal = -2;
@@ -206,6 +207,39 @@ public class ScreenDrawer extends JPanel {
 
         JFrame frame = new JFrame("Fract-All");
         ScreenDrawer drawer = new ScreenDrawer(width, height, 1000);
+
+        private void openSettingsDialog(JFrame parentFrame) {
+        // Create a modal dialog
+        JDialog settingsDialog = new JDialog(parentFrame, "Set Iterations", true);
+        settingsDialog.setSize(300, 150);
+        settingsDialog.setLayout(new FlowLayout());
+        settingsDialog.setLocationRelativeTo(parentFrame);
+
+        // Label for integer input
+        JLabel label = new JLabel("Enter a new value for myVariable:");
+
+        // Integer input field
+        JTextField integerField = new JTextField(10);
+
+        // OK button to confirm the change
+        JButton okButton = new JButton("OK");
+        okButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    // Get the entered value and update myVariable
+                    int newValue = Integer.parseInt(integerField.getText());
+                    myVariable = newValue;
+                    System.out.println("Interations have been set to: " + );
+                    settingsDialog.dispose(); // Close the dialog
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(settingsDialog,
+                            "Please enter a valid integer.",
+                            "Invalid Input",
+                            JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        });
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(drawer, BorderLayout.CENTER); // No progress bar
