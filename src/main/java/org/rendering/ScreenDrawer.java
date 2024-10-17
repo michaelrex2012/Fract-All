@@ -206,7 +206,7 @@ public class ScreenDrawer extends JPanel {
         int height = (int) (width / aspectRatio);
 
         JFrame frame = new JFrame("Fract-All");
-        ScreenDrawer drawer = new ScreenDrawer(width, height, 1000);
+        ScreenDrawer drawer = new ScreenDrawer(width, height, 500);
 
         private void openSettingsDialog(JFrame parentFrame) {
         // Create a modal dialog
