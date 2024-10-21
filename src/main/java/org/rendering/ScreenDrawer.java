@@ -18,7 +18,7 @@ public class ScreenDrawer extends JPanel {
     private BufferedImage bufferedImage;
     private BufferedImage lowResImage;
     private Timer zoomTimer;
-    private interations = 500;
+    private int interations = 500;
 
     // Define the boundaries of the complex plane
     private double minReal = -2;
@@ -205,7 +205,6 @@ public class ScreenDrawer extends JPanel {
         double aspectRatio = 1.0;
         int height = (int) (width / aspectRatio);
 
-        JFrame frame = new JFrame("Fract-All");
         ScreenDrawer drawer = new ScreenDrawer(width, height, 500);
 
         private void openSettingsDialog(JFrame parentFrame) {
@@ -241,6 +240,7 @@ public class ScreenDrawer extends JPanel {
             }
         });
 
+        JFrame frame = new JFrame("Fract-All");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(drawer, BorderLayout.CENTER); // No progress bar
         frame.pack();
