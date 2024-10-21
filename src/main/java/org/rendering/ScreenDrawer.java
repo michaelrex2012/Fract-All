@@ -213,7 +213,7 @@ public class ScreenDrawer extends JPanel {
         settingsDialog.setLocationRelativeTo(parentFrame);
 
         // Label for integer input
-        JLabel label = new JLabel("Enter a new value for myVariable:");
+        JLabel label = new JLabel("Enter a new interation value:");
 
         // Integer input field
         JTextField integerField = new JTextField(10);
@@ -226,8 +226,8 @@ public class ScreenDrawer extends JPanel {
                 try {
                     // Get the entered value and update myVariable
                     int newValue = Integer.parseInt(integerField.getText());
-                    myVariable = newValue;
-                    System.out.println("Interations have been set to: " + );
+                    iterations = newValue;
+                    System.out.println("Interations have been set to: " + iterations);
                     settingsDialog.dispose(); // Close the dialog
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(settingsDialog,
