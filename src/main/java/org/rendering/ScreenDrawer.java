@@ -205,8 +205,6 @@ public class ScreenDrawer extends JPanel {
         double aspectRatio = 1.0;
         int height = (int) (width / aspectRatio);
 
-        ScreenDrawer drawer = new ScreenDrawer(width, height, 500);
-
         private void openSettingsDialog(JFrame parentFrame) {
         // Create a modal dialog
         JDialog settingsDialog = new JDialog(parentFrame, "Set Iterations", true);
@@ -240,6 +238,7 @@ public class ScreenDrawer extends JPanel {
             }
         });
 
+        ScreenDrawer drawer = new ScreenDrawer(width, height, 500);
         JFrame frame = new JFrame("Fract-All");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(drawer, BorderLayout.CENTER); // No progress bar
