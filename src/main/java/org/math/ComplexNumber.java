@@ -71,4 +71,22 @@ public class ComplexNumber {
     public boolean greaterThan(ComplexNumber compareTo) {
         return r * r + i * i > compareTo.r * compareTo.r + compareTo.i * compareTo.i;
     }
+
+    public ComplexNumber subtract(ComplexNumber complexIn) {
+        return new ComplexNumber(r - complexIn.r, i + complexIn.i);
+    }
+
+    public ComplexNumber power(double power) {
+        double modulus = Math.sqrt(r*r + i*i);
+
+        double theta = Math.atan2(i,r);
+
+        double new_modulus = Math.pow(modulus,power);
+        double new_theta = theta * power;
+
+        double result_real = new_modulus * Math.cos(new_theta);
+        double result_imaginary = new_modulus * Math.sin(new_theta);
+
+        return new ComplexNumber(result_real,result_imaginary);
+    }
 }

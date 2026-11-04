@@ -10,6 +10,8 @@ import java.util.concurrent.ForkJoinPool;
 import org.math.ComplexNumber;
 import org.math.MandelbrotSet;
 import java.awt.event.*;
+import java.awt.Color;
+import java.awt.BorderLayout;
 
 public class ScreenDrawer extends JPanel {
     private final int width;
@@ -174,7 +176,6 @@ public class ScreenDrawer extends JPanel {
                     image.setRGB(x, y, getColor(iterations).getRGB());
                 }
             }
-            Toolkit.getDefaultToolkit().sync();
         }
     }
 
@@ -205,47 +206,14 @@ public class ScreenDrawer extends JPanel {
         double aspectRatio = 1.0;
         int height = (int) (width / aspectRatio);
 
-        private void openSettingsDialog(JFrame parentFrame) {
-        // Create a modal dialog
-        JDialog settingsDialog = new JDialog(parentFrame, "Set Iterations", true);
-        settingsDialog.setSize(300, 150);
-        settingsDialog.setLayout(new FlowLayout());
-        settingsDialog.setLocationRelativeTo(parentFrame);
+            ScreenDrawer drawer = new ScreenDrawer(width, height, 500);
+            JFrame frame = new JFrame("Fract-All");
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.getContentPane().add(drawer, BorderLayout.CENTER); // No progress bar
+            frame.pack();
+            frame.setLocationRelativeTo(null);
+            frame.setVisible(true);
 
-        // Label for integer input
-        JLabel label = new JLabel("Enter a new interation value:");
-
-        // Integer input field
-        JTextField integerField = new JTextField(10);
-
-        // OK button to confirm the change
-        JButton okButton = new JButton("OK");
-        okButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    // Get the entered value and update myVariable
-                    int newValue = Integer.parseInt(integerField.getText());
-                    iterations = newValue;
-                    System.out.println("Interations have been set to: " + iterations);
-                    settingsDialog.dispose(); // Close the dialog
-                } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(settingsDialog,
-                            "Please enter a valid integer.",
-                            "Invalid Input",
-                            JOptionPane.ERROR_MESSAGE);
-                }
-            }
-        });
-
-        ScreenDrawer drawer = new ScreenDrawer(width, height, 500);
-        JFrame frame = new JFrame("Fract-All");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add(drawer, BorderLayout.CENTER); // No progress bar
-        frame.pack();
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
-
-        drawer.renderMandelbrotSet(); // Start rendering
-    }
+            drawer.renderMandelbrotSet(); // Start rendering
+        }
 }

@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cc0ceaf-0f9f-4385-9904-56c4d3923ac0" name="Changes" comment="Added">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/main.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/math/ComplexNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/math/MandelbrotSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rendering/ScreenDrawer$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rendering/ScreenDrawer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rendering/ScreenDrawer$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rendering/ScreenDrawer$MandelbrotTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rendering/ScreenDrawer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/math/ComplexNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/math/ComplexNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/rendering/ScreenDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rendering/ScreenDrawer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/viewers/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/viewers/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/viewers/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +32,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Fract-All" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -55,51 +51,117 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/michaelrex2012/Fract-All.git&quot;,
-    &quot;accountId&quot;: &quot;7769154d-6b9a-43df-b5f5-a9aaa7acf1cc&quot;
+    &quot;accountId&quot;: &quot;32aa276e-584e-43e1-805b-08b098df9cb2&quot;
   }
 }</component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.00013910913689" />
+      <entry key="S2" value="1.2077174236545551" />
+      <entry key="S5" value="2.049230160730005" />
+      <entry key="S10" value="3.1663301900665703" />
+      <entry key="S30" value="7.486251511859509" />
+      <entry key="S60" value="13.662728556388984" />
+      <entry key="M2" value="22.873756105548143" />
+      <entry key="M5" value="37.98832826078002" />
+      <entry key="M10" value="48.691999742087994" />
+      <entry key="M15" value="53.663409302232076" />
+      <entry key="M30" value="59.66651249578748" />
+      <entry key="H1" value="63.14467389582028" />
+      <entry key="H2" value="65.0220309223734" />
+      <entry key="H4" value="65.99801755616369" />
+      <entry key="D1" value="66.83116059129765" />
+      <entry key="W1" value="66.9758344736285" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="7.297249865434516E-9" />
+      <entry key="MS500" value="0.023584780758133743" />
+      <entry key="S2" value="0.3918871382875302" />
+      <entry key="S5" value="0.6956519019150155" />
+      <entry key="S10" value="0.971328752059874" />
+      <entry key="S30" value="2.1548109385468788" />
+      <entry key="S60" value="3.5629349511707344" />
+      <entry key="M2" value="5.773133748851571" />
+      <entry key="M5" value="11.02425834149477" />
+      <entry key="M10" value="15.999617785846542" />
+      <entry key="M15" value="18.565623429041366" />
+      <entry key="M30" value="21.826324587165047" />
+      <entry key="H1" value="23.782791039145692" />
+      <entry key="H2" value="24.85650383655966" />
+      <entry key="H4" value="25.419222963246604" />
+      <entry key="D1" value="25.90192291035558" />
+      <entry key="W1" value="25.985957260712677" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.002050227897701304" />
+      <entry key="MS500" value="0.2901717084756959" />
+      <entry key="S2" value="1.0175565637473634" />
+      <entry key="S5" value="2.284772428437247" />
+      <entry key="S10" value="3.809106555235626" />
+      <entry key="S30" value="9.4285954236489" />
+      <entry key="S60" value="17.038495464257235" />
+      <entry key="M2" value="28.477284579519065" />
+      <entry key="M5" value="48.87637472682164" />
+      <entry key="M10" value="64.59396253654889" />
+      <entry key="M15" value="72.15413689130831" />
+      <entry key="M30" value="81.44928189881163" />
+      <entry key="H1" value="86.90387863700501" />
+      <entry key="H2" value="89.86624837396623" />
+      <entry key="H4" value="91.41096846964342" />
+      <entry key="D1" value="92.73201977151356" />
+      <entry key="W1" value="92.96163931600582" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2mwanExa0o4aaWCk7X3m0mRjyP2" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.Fract-All [:org.viewers.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;JAR Application.Fract-All-0.1-Beta.jar.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.Fract-All [:org.viewers.Main.main()].executor": "Run",
+    "Gradle.Upgrade Gradle wrapper.executor": "Run",
+    "JAR Application.Fract-All-0.1-Beta.jar.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
-    <configuration name="Fract-All-0.1-Beta.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/src/main/java/Fract-All-0.1-Beta.jar" />
-      <method v="2" />
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="25" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.viewers.Main" />
+      <module name="Fract-All.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JAR Application.Fract-All-0.1-Beta.jar" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+        <option value="bundled-jdk-30f59d01ecdd-2df11533d9fe-intellij.indexing.shared.core-IU-262.11879.100" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.11879.100" />
       </set>
     </attachedChunks>
   </component>
